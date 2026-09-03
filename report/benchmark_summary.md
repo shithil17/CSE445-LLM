@@ -1,0 +1,16 @@
+# Benchmark Summary: 3 Algorithms x 2 Datasets (5-fold CV)
+
+Autonomous evaluation of 3 algorithms across 2 datasets with cross-validation.
+
+| Dataset | Algorithm | CV Mean Accuracy | CV Std | Test Accuracy | Source |
+|---|---|---|---|---|---|
+| iris | decision_tree | 0.9533 | 0.0340 | 0.9333 | agent |
+| iris | random_forest | 0.9667 | 0.0211 | 0.9000 | agent |
+| iris | pytorch_mlp | 0.8200 | 0.0452 | 0.7333 | agent |
+| breast_cancer | decision_tree | 0.9209 | 0.0202 | 0.9386 | agent |
+| breast_cancer | random_forest | 0.9543 | 0.0244 | 0.9561 | agent |
+| breast_cancer | pytorch_mlp | 0.9508 | 0.0196 | 0.9386 | agent |
+
+6/6 rows from live agent, 0/6 from deterministic fallback
+
+agent_success_rate: 1.00 (6/6)
